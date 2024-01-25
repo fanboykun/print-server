@@ -3,7 +3,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    let a = []
+    // let a = []
     const obj1 = {
         type: 0,
         content: 'My Title',
@@ -12,7 +12,8 @@ app.get('/', (req, res) => {
         format: 3
     };
     a.push(obj1)
-  res.json(a);
+  res.json(obj1);
+  // res.json(a);
 });
 
 app.listen(3000, () => {
